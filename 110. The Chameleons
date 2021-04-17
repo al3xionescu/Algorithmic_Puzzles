@@ -1,0 +1,9 @@
+A researcher puts three types of chameleons on an island: 10 brown, 14 gray, and 15 black. When two chameleons of different colors meet, they both change their 
+colors to the third one. Will it be possible for all the chameleons to become the same color ?
+
+
+Solution: After two chameleons with different colors meet, the number of chameleons of their colors will decrease by 1 and the number of chameleons of the other color
+will increase by 2. If we think at the differences between the numbers of the differently colored chameleons, one such difference will not change and the others two 
+will increase by 3. So, the division-by-3 remainders of all the three differences will not change. From this, we can see from our initial data that it is impossible
+for the chameleons to become the same color. As the initial differences are 1, 4 and 5, the division-by-3 remainders are 1, 1 and 2. But if the chameleons would have
+the same color, one difference would be 0, with the division-by-3 remainder 0 as well. 
