@@ -1,0 +1,10 @@
+A man put a pair of rabbits in a place surrounded on all sides by a wall. The initial pair of rabbits (male and female) are newborn. All rabbit pairs are not
+fertile during their first month of life but give birth to one new male/female pair at the end of the second month and every month thereafter. How many pairs of 
+rabbits will be there in a year?
+
+
+Solution: After 12 months, there will be 233 pairs of rabbits.
+Let R(n) be the number of rabbit pairs at the end of month n. We can see that R(0) = 1 and R(1) = 1. For every n > 1, the number of rabbit pairs, R(n), is equal to 
+the number of pairs at the end of month n − 1, R(n − 1), plus the number of rabbit pairs born at the end of month n. According to the problem’s assumptions, the
+number of newborns is equal to R(n − 2), the number of rabbit pairs at the end of month n − 2. Thus, we have the recurrence relation
+R(n) = R(n − 1) + R(n − 2) for n > 1, R(0) = 1, R(1) = 1. It is then observed that at the end of 12 months there will be 233 pairs. 
