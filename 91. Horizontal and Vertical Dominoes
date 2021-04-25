@@ -1,0 +1,15 @@
+Determine all the values of n for which one can tile an n × n board so that the number of horizontal and vertical dominoes is the same.
+
+
+Solution: A required tiling is possible if and only if n is divisible by 4.
+If n is odd, the n × n board has an odd number of squares. Therefore, no domino tiling of such a board is possible, because any domino tiling covers an even number
+of squares.
+If n is divisible by 4, that is, n = 4k, the board can be divided into 4k^2 2 × 2 squares. Since 4k^2 is an even number, one can tile one half of the 2 × 2 squares
+with horizontal dominoes and the other half with vertical dominoes to get a desired tiling.
+If n is even but not divisible by 4, that is, n = 2m where m is odd, no tiling of an n × n board with an equal number of horizontal and vertical dominoes is
+possible. To prove this, we color the board’s rows with two alternating colors. 
+Note that any horizontal tile would cover two squares of the same color, and any vertical tile would cover two squares of different colors.
+We want to cover the board’s n^2 = 4*m^2 cells with t horizontal tiles and t vertical tiles, where t = m^2. The colored board has 2*m^2 squares of one color and 
+2*m^2 squares of the other color. The vertical dominoes would cover m^2 squares of each color, leaving the remaining m^2 squares of each color to be covered by 
+horizontal dominoes. But this is impossible for either of the two colors because m^2 is odd whereas the number of squares covered by dominoes must be even.
+
